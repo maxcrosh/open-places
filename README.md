@@ -8,7 +8,7 @@ The project is built using [`scrapy`](https://scrapy.org/), a Python-based web s
 
 ## Adding a spider
 
-To scrape a new website for locations, you'll want to create a new spider. You can copy from existing spiders or start from a blank, but the result is always a Python class that has a `process()` function that `yield`s [`GeojsonPointItem`s](https://github.com/iandees/all-the-places/blob/master/locations/items.py). The Scrapy framework does the work of outputting the GeoJSON based on these objects that the spider generates.
+To scrape a new website for locations, you'll want to create a new spider. You can copy from existing spiders or start from a blank, but the result is always a Python class that has a `process()` function that `yield`s [`GeojsonPointItems`](https://github.com/iandees/all-the-places/blob/master/locations/items.py). The Scrapy framework does the work of outputting the GeoJSON based on these objects that the spider generates.
 
 ## Development setup
 
@@ -29,12 +29,12 @@ To get started, you'll want to install the dependencies for this project.
    pipenv install
    ```
 
-1. After dependencies are installed, make sure you can run the `scrapy` command without error
+4. After dependencies are installed, make sure you can run the `scrapy` command without error
 
    ```
    pipenv run scrapy
    ```
 
-1. If `pipenv run scrapy` ran without complaining, then you have a functional `scrapy` setup and are ready to write a scraper.
+5. If `pipenv run scrapy` ran without complaining, then you have a functional `scrapy` setup and are ready to write a scraper.
 
 ## Create a new spider
