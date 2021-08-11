@@ -18,20 +18,20 @@ To get started, you'll want to install the dependencies for this project.
 
 2. With `pipenv` installed, make sure you have the `all-the-places` repository checked out
 
-   ```
+   ```console
    git clone git@github.com:maxcrosh/open-places.git
    ```
 
 3. Then you can install the dependencies for the project
 
-   ```
+   ```console
    cd open-places
    pipenv install
    ```
 
 4. After dependencies are installed, make sure you can run the `scrapy` command without error
 
-   ```
+   ```console
    pipenv run scrapy
    ```
 
